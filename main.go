@@ -163,7 +163,7 @@ func main() {
 			return c.SendStatus(404)
 		}
 
-		return c.SendStatus(200).JSON("record deleted")
+		return c.Status(200).JSON("record deleted")
 	})
 
 	log.Fatal(app.Listen(":3000"))
